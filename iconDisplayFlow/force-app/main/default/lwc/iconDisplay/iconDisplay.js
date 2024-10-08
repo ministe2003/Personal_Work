@@ -20,7 +20,7 @@ export default class IconDisplay extends LightningElement {
     }
 
     initCSSVariables() {
-        this.template.querySelector('.my-icon').style.setProperty('--backgroundColor', this.backgroundColor);
-        this.template.querySelector('.my-icon').style.setProperty('--foregroundColor', this.foregroundColor);
+        this.template.querySelector('.my-icon')?.style.setProperty('--backgroundColor', this.backgroundColor);
+        this.template.querySelector('.my-icon')?.style.setProperty('--foregroundColor', this.foregroundColor);
     }
 }
